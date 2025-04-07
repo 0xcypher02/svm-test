@@ -51,7 +51,7 @@ where
 
     fn inner() -> litesvm::LiteSVM {
         litesvm::LiteSVM::default()
-            .with_builtins(None)
+            .with_builtins()
             .with_lamports(1_000_000u64.wrapping_mul(10u64.pow(9)))
             .with_sysvars()
             .with_sigverify(true)
